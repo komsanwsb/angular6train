@@ -1,0 +1,18 @@
+<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Logo</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="btn" (click)="goToPage('','home')">Home</a></li>
+        <li><a class="btn" (click)="goToPage('','login')">Login</a></li>
+        <li><a class="btn" (click)="goToPage('admin','demo-list')">Demo firebase fireStore List</a></li>
+        <li><a class="btn" (click)="goToPage('admin','demo-form')">Demo firebase fireStore Form</a></li>
+
+        <li><a class="btn" (click)="goToPage('admin','demo-db-list')">Demo firebase Realtime DB List</a></li>
+        <li><a class="btn" (click)="goToPage('admin','demo-db-form')">Demo firebase Realtime DB Form</a></li>
+
+        <li><a class="btn" (click)="goToPage('admin','demo-upload')">Demo Upload firebase storage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+<p *ngIf="showText">
+  home works!
+</p>
+<h1>{{name}}</h1>
+ <a class="btn" (click)="toggleShow()"    [ngClass]= "{'active': showText}">Toggle
+
+</a>
+
+<ul>
+
+  <li *ngFor="let i of [1,2,3,4]">
+    {{i}}
+  </li>
+</ul>
+
+<div [ngSwitch]="name">
+  <ng-template [ngSwitchCase]="case1Exp"> One</ng-template>
+  <ng-template ngSwitchCase="case2LiteralString">Two</ng-template>
+  <ng-template ngSwitchDefault>Three</ng-template>
+</div>
+
+<p>{{price|number:'1.2-3'}}</p>
+<p>{{price|date:'dd/MM/y H:mm:ss'}}</p>
+
+
+
+<p  >
+    home works!
+  </p>
+  <h1>{{name}}</h1>

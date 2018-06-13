@@ -1,0 +1,5 @@
+<form #demoForm="ngForm" (ngSubmit)='onFormSubmit()'>
+<input type="text" name="code" [(ngModel)] = "_data.code" />
+<input type="text" name="name" [(ngModel)] = "_data.name" />
+<input type="submit" value="save" />
+</form>

@@ -1,0 +1,26 @@
+<form #loginForm="ngForm" (ngSubmit)="OnSubmit(loginForm)">
+  <input type='text' [(ngModel)]="userId" name="userId"  class="input-field col s6" required/>
+  <input type='password' [(ngModel)]='password' name="password" class="validate" required />
+  <input type="submit" value="Login"/>
+</form>
+<div>
+  {{loginForm.value|json}} {{loginForm.valid}}
+  {{userId}}
+  {{password}}
+</div>
+
+<button class="btn" (click)="testData()">Test Data</button><br>
+<button class="btn" (click)="onGoogleSignIn()">Sign In With Google</button><br>
+<button class="btn" (click)="onFacebookSignIn()">Sign In With Facebook</button><br>
+
+<div class="row">
+<input type="text" [(ngModel)]= "otp"  />
+</div>
+<div id="recapt-id"> </div>
+<button class="btn" (click)="onRequestOtp()">OTP</button><br>
+<!--
+   <p>{{userId}}: {{password}} </p>
+ <a class= 'btn' (click)='testData()'>Test Data</a>
+[(ngModel)]='userId'
+ <app-home (toggle)='onToggle($event)'>fff</app-home>
+-->
